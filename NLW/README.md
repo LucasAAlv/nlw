@@ -13,6 +13,7 @@ Projeto construído durante o evento Next Level Week com duração de uma semana
 - HTML
 - CSS
 - Git e Github
+- Figma
 
 ## 🤓 O que aprendi:
 
@@ -20,6 +21,7 @@ Projeto construído durante o evento Next Level Week com duração de uma semana
 - Boas praticas na estruturação do CSS.
 - Novas animações com CSS.
 - Novas ferramentas do github e git.
+- Utilizar plataforma Figma.
 
 ## 📩 Meu contato:
 
