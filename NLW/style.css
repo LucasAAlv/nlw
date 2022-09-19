@@ -1,0 +1,178 @@
+
+/* Reset de CSS: serve para remover alguns padroes do navegador com relação
+aos estilos do html */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* Adicionando o background e configurando para que não repita a imagem
+e o tamanho se ajuste a largura do dispositivo */
+body{
+    background-image: url(./Assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+/* Referenciando a fonte adicionada no arquivo html na tag <head> atráves
+do site fonts.google.com */
+body{
+    font-family: 'inter', 'sans-serif';
+    line-height: 160%;
+}
+
+header{
+    height: calc(120px + 32px);
+    padding-top: 32px;
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+
+    display: flex;
+    padding: 4px;
+
+    transition: transform .3s;
+}
+
+header div:hover{
+    transform: scale(1.1);
+}
+
+header img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* ajustando o tamanho da tag <main> e sua largura, bem como a forma de exi
+bição e margens */
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+
+}
+
+/* Inicio da estilização das tags <section>, adicionando uma cor e uma
+borda arrendondada */
+section{
+    color: white;
+
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 14.5px;
+    padding-top: 4px;
+    
+}
+
+/* Estilização dos cartões que servem de fundo para as imagens. Adicionado
+cor de fundo, preenchimento e bordas arredondadas */
+section div{
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+/* Estilização dos subtitulos. Subtraido uma parte do espaço entre as letras */
+section h2{
+    letter-spacing: -0.47px;
+}
+
+/* Estilização das tags <p>. Subtraido uma parte do espaço entre as letras
+e adicionado cor. */
+section p{
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+/* Estilização das listas, adicionado um modo de exibição flex, fazendo com
+que ao serem adicionados mais itens eles acabem indo para linha abaixo,
+ajustado tambem o espaço entre as imagens. */
+section ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+section ul li{
+    transition: transform .3s;
+}
+
+section ul li:hover{
+    transform: scale(1.1);
+}
+
+/* Estilização da classe games-list,  adicionado largura maxima e uma borda
+arredondada.*/
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+/* Estilização da classe channel-list, adicionado largura maxima e uma borda
+arrendondada. */
+.channel-list img{
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443e54;
+}
+
+/* Animation */
+
+header div{
+    animation: fromTop 1s;
+}
+
+main section{
+    animation: fromBottom 1s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0;
+}
+
+main section:nth-child(2){
+    animation-delay: .4s;
+}
+
+main section:nth-child(3){
+    animation-delay: .7s;
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom{
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
