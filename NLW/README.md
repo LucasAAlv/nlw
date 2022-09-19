@@ -4,7 +4,7 @@
 
 > 🧗‍♂️ Trilha Explorer   
 
-Projeto construído durante o evento com duração de uma semana Next Level Week, da rocketseat.
+Projeto construído durante o evento Next Level Week com duração de uma semana, da rocketseat.
 
 🔗[Clique aqui para acessar.](https://lucasaalv.github.io/nlw/NLW/)
 
